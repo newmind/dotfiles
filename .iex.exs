@@ -1,6 +1,16 @@
 IEx.configure(
   inspect: [limit: 5_000],
-  history_size: 100
+  history_size: 100,
+  colors: [
+    syntax_colors: [
+      number: :magenta,
+      atom: :cyan,
+      string: :green,
+      boolean: :magenta,
+      nil: :magenta
+    ],
+    width: 30
+  ]  
 )
 
 defmodule Tool do
